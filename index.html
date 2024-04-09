@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="nav-container">
+        <div class="nav container">
+            <div>Flipkart</div>
+            <div id="searchItems">
+                <input type="text" placeholder="search here..">
+            </div>
+            <div class="nav-links">
+                <div id="user"></div>
+                <div class="cart"><a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                        <div id="cartItems">0</div>
+                    </a>
+                </div>
+                <div><a id="logout">Logout</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="carouselOfImage">
+
+        </div>
+        <button id="previousButton">
+            < </button>
+                <button id="nextButton"> > </button>
+
+                <div class="dotsContainer">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+    </section>
+
+    <section class="container categories_container">
+        <div id="categories">
+            <span id="all">ALL</span>
+            <span id="men">MEN</span>
+            <span id="women">WOMEN</span>
+            <span id="electronics">ELECTRONICS</span>
+        </div>
+    </section>
+
+    <section class="container">
+        <div id="dataContainer">
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container footerItems">
+            <div class="footerText">
+                <span class="footer-text">
+                    Copyright © 2023 nuvosa, All rights reserved
+                </span>
+            </div>
+            <div class="footerLinks">
+                <a href="#" class="footer-text text-decoration-none">Terms Of Use</a>
+                <a href="#" class="footer-text text-decoration-none">Copyrights</a>
+                <a href="#" class="footer-text text-decoration-none">Policy</a>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="./main/index.mjs"></script>
+    <script src="./main/carousel.js"></script>
+</body>
+
+</html>

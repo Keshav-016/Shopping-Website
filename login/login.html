@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <section class="form-section">
+        <div class="form-container">
+            <form>
+                <div id="loginData">
+                    <h1>Login Page</h1>
+                    <input type="email" placeholder="Email" id="loginEmail">
+                    <input type="password" placeholder="Password" id="loginPassword">
+                    <button id="login">Login</button>
+                    <div>Don't have an account?<a href="#" id="gotoSignup">Signup</a></div>
+                </div>
+                <div id="signupData">
+                    <h1>Signup Page</h1>
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="number" placeholder="Phone no" id="phn">
+                    <input type="email" placeholder="Email" id="email">
+                    <input type="password" placeholder="Password" id="password">
+                    <button id="signup">Signup</button>
+                    <div>already have an account? <a href="#" id="gotoLogin">login here</a></div>
+                </div>
+                <div id="otpData">
+                    <h1>An OTP is being sent to your given email :</h1>
+                    <input type="number" placeholder="Enter the OTP " id="otpInput">
+                    <button id="otpVerification">Verify OTP</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="userLogin.mjs"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+</body>
+
+</html>
